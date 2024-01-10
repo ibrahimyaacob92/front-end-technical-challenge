@@ -133,7 +133,13 @@ export const analysisResponse = [
   [
     {
       origin: "dd",
-      value: ["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"],
+      // value: ["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"],
+      value: {
+        PetalWidthCm: 0.35805864148438127,
+        SepalWidthCm: 0.06840044886502064,
+        PetalLengthCm: 0.36509329889013475,
+        SepalLengthCm: 0.20844761076046325,
+      },
       insight_name: "feature_list",
       name: "dd_feature_list",
     },

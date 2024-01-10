@@ -1,7 +1,7 @@
 import { modelTypeIconMap } from "./ModelTypeIcons";
-import { ModelType } from "../types";
+import { ModelType } from "../../types";
 import { Package } from "lucide-react";
-import { defaultIconProps } from "../styles/props";
+import { defaultIconProps } from "../../styles/props";
 
 type Props = {
   modelType: ModelType;

@@ -1,3 +1,5 @@
+import { format, formatDistanceToNow } from "date-fns";
+
 enum DurationFormat {
   HMS = "hms", // hours, minutes, seconds
   HM = "hm", // hours, minutes
@@ -37,4 +39,19 @@ export function formatDuration(
   }
 
   return formattedDuration.trim();
+}
+
+export function getRelativeDate(date: Date): string {
+  const currentDate = new Date();
+  const formattedDate = formatDistanceToNow(date, { addSuffix: true });
+
+  if (
+    Math.abs(currentDate.getTime() - date.getTime()) >
+    5 * 24 * 60 * 60 * 1000
+  ) {
+    // If the date is more than 5 days ago, format it as "day month"
+    return format(date, "d MMM");
+  }
+
+  return formattedDate;
 }
