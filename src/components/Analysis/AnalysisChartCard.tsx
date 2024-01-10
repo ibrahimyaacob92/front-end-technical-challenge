@@ -1,15 +1,7 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  CardOverflow,
-  Skeleton,
-  Stack,
-  Typography,
-} from "@mui/joy";
+import { Card, CardContent, Skeleton, Typography } from "@mui/joy";
 import { Analysis } from "../../types";
 import { useMemo } from "react";
-import { ResponsiveBar, Bar } from "@nivo/bar";
+import { ResponsiveBar } from "@nivo/bar";
 import { capitalize, startCase } from "lodash";
 
 type Props = {

@@ -14,7 +14,7 @@ const ModelList = () => {
     <div className="grid w-full grid-cols-1 gap-2 mx-auto lg:grid-cols-2">
       {isLoading && (
         <>
-          {new Array(10).fill(null).map((i) => (
+          {new Array(10).fill(null).map((_i) => (
             <ModelCard isLoading />
           ))}
         </>
