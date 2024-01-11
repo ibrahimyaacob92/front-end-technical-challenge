@@ -9,7 +9,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="flex flex-col gap-2">
         <Navbar />
-        <div className="w-full px-5 mt-4 lg:mx-auto lg:max-w-6xl">
+        <div className="w-full px-5 mt-4 ">
           <Outlet />
         </div>
       </div>

@@ -8,7 +8,6 @@ const Navbar = () => {
       <Divider orientation="vertical" />
       <Link to="/">Home</Link>
       <Link to="/inventory">Inventory</Link>
-      <Link to="/models">Models</Link>
     </nav>
   );
 };

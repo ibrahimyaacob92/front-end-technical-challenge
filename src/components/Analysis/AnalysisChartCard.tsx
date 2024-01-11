@@ -43,7 +43,9 @@ const AnalysisChartCard = ({ data, isLoading, chartGroupIndex }: Props) => {
   return (
     <Card
       sx={{
-        height: "600px",
+        height: "100%",
+        width: "100%",
+        margin: 0,
         minWidth: "300px",
         overflowX: "auto",
         overflowY: "hidden",
